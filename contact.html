@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    section {
+  padding-top: 4vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+#projects {
+  position: relative;
+}
+.section__text__p2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}  
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+} 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 15px;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: #012b2c ;
+  color:  #f2ffc7 ;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 20px;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ 
+ 
+  article {
+    font-size: 1rem;
+  }
+  
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+</style>
+</head>
+<body>
+    <section id="projects">
+        
+        <h1 class="title">Profiles</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-code-forces-3521352-2944796.png" alt="Project 1" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Codeforces</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  View
+                </button>
+                <button class="btn btn-color-1 project-btn">
+                    Newbie
+                  </button>
+                
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="data:image/png;base64,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" alt="Project 2" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Github</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Explore
+                </button>
+                <button class="btn btn-color-1 project-btn">
+                    Developer
+                  </button>
+                
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKIArAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQIFBgcEAwj/xAA5EAAABgECAwUECQMFAAAAAAAAAQIDBBEFBhIhMVEHE0FhcRQygZEVIiNCU6Gx0fBScsEkM2KCov/EABkBAQADAQEAAAAAAAAAAAAAAAACBAUBA//EACARAQACAgICAwEAAAAAAAAAAAABAgMRBBIhMSIjURP/2gAMAwEAAhEDEQA/AOHAAAAAAAAUFAAAAAAAAAAAACaABAAJAVEhQAAAAAAAAtQCaABACQAQAkAEUAkAEAJABAUJABACQAQAkAEUAkKARQUJABFAJoAEgLUFAKgLUACtALUFAK0AtQUArQCw+8OI/PlNRYbK3pDyyQ22grNR9P5wARAhyMhLZiQ2VvyHlkhttBWaj6Domoex7JYLSa8y/kGXJDDZOSIiUUSU+JEu+Neg6h2ZdnkbSERM2f3buYcR9o4ZFtYLxSk/1PxHPu2TtCkZSQ7p7Gpcj45B/buLQaVSDI/Aj+5fzHNxvRpyVRWZiBYB0VoBagoBWgFqCgFaAWoKAVoBagoBagoTQUAgKE0FAIoBNBQCKChNAfD1IB9oUSRPlsw4TK3pLyiQ22grNR9P5wH6R7M+z6Jo2Cc7IG27llt286dbWE+KU+XU/EfLsp0LF0tiEZXIIT9KSGt7ji+UdHPaXThzMaB2s9pa8847hMC6acYlW199J8ZJ9C/4fr6cw2XU/a7hFzFwIftT0ZCjSuQ0gtq66GZ8S+HEfKZExOrsOR7kusqL7J5PvNK8uh9SHDPl8BndK6kk6el70faRXP8AeYM6JXmXQ/MZnM4Vrz/XHM94XeNyYp8Lx4l49QYSZgJxxZiPC23El9VwupDG0Nt1xquPqFMVmJGcbbYM1bnTLcZmXIvIanQu8e2S2OJyxqyvmilbzFJ3CKChNBQ9nkgKE0ACKChNBQCKChNBQC1BQtQUArQULUFAK0FC1BQCtD24Qm/pvGk/XdHLa33yreV38LHkoK6HRgP092wqlJ7PMn7Du91JO7PwtxbvhX5D8v8AMy40XjX8+Q/S3ZjrSJq7CJx2Q2HkmWe7kML4k8iq3F1Iy5l+45p2p9m7mnHXMth21LxLirW2XE4pn5/0dD8AGwYmFpI8ZFNlvFrQbSaU4pBqPhxuzu7Hr9h0t+BiPm3+44VtT0L5DMaZ05J1BM7pgiQyji68abJBdPMxDJetKza0+ISpSb26w677Dpb8DEfNv9xovaaxgWkQvolMZMzce9MUyMtleNcLvl8RjNZ6Tb08mM7Hkm+0+e2loIlEouI1jbRDmLLTLXvT07elqW62VoKFqCh6IK0FC1BQCtBQtQUArQULUFALUFC1BQCtBQtQUArQULUFAK0FC1BQD7Y6dKxk5ibj3lsSWVEpDiT4kf7dS8R+jNAa8x+scUqJPJlrIobqRHXWx1Ne8m+ZH4l4D82iyFLbWlxtSkrTyUk6Mj6kYTvXgj26xl+zjCO5V9yC++zFNwzJpBkZEXRJn4f4GTccxWksPwJLEdHFKCP6zqj/AFM/yHL2tX6gaa7tORcMiLmpJGZfEYqbOlT3e+mSHH3f6nDM/kMa3A5Ge+s9/j+NGvKxY6/XXy9eoc5Kz805Mk9raSppkuJNp6eZ+YxVdBagGtSlaV61jUQoXtN53adyrQULUFCaKtBQtQUArQULUFAK0FC1BQC1BQmgoBFBQmgoBUwoZHT7aXNQYpC07kKmsEZGVkZG4kqP9vMe3XLSGtZ5ttttCWymuUlJURFf6AMERBQ2fFaHyk7GsZF6XjMdHk8YysjJ7k3+hpKj5jwT9NZeBm28K9CUqe6ZEy2g9xOkfI0n4lz4+QDD0I8aG5O9nObaQ93ErEy5TCd7sGLMJb6C8bTX5EY9cbBtZHstiPHLxsF5nJPqU5Nc7pThEg/s0nRmauX1fIBoR0nmZF6gRkr3TI/MhvUJOP0fpvHZmVAYyGbyhKdiIkFuajNF9403xM7/AJ44XMZzKarkxI7kSIb5L2MohRSbUtSqKjrn4cOQDX66iSIbivs4zZEtpqTiHpzaN6sczMJUgi/trn5EYweC0/ks7PXDxzBd40Rm8t09iGElzNZny48OoDEmFDp+kdESce9kp8l/E5KCWMkt97DkE+ltzaVEdpKj5jUcBpDJZnGnkiegQYG7YUrISO6bWrok6MzrrwAa9QUMxqHTeR09IbbyKG1IeTvakMOb23k9Uq8fTzGJqwEEQgyFqCgEEQUJoKAWoKFqCgFaChYKAezBOIYz2MfdWSW25rK1GfIiJxJmZjZO0TTWcLU+bnJxMxyEt9byZLbKlNm2fHduLhXXoNPq+Hh0HtTmMsUX2ROVyPsppruClObDLptuq+ADrOdjY/JN47UWK03K1M6/HbbYRv8A9PEJJUaFILjZHZ0ZVZ8x5489cbX2La1Llo6Z7uPcjKajtoQ3jXF1sQRl411viZdRymHOmwSWUGbKikv3yjvqRu9dplfxHnWZrUZqM1KVxUZnZn6+YDsMDGS8JllxcBpxWFjs2qXqPKGTq0t/eWgzM0cS8OXUhrc6FKyvZo2WLS/kfZs5IceW03a9hpVS1JLiV3+Y0t3IT3o6Yr8+Y4wn3WlyFqQX/W6/IVizpkRLiYcuTHJ0trhMvKQSy6KIjKy8gG6qxy9caRxBYRTTmYwzBxn4JqJK3WvurRfPl+vx8+ioUnS+s8VJ1JCk45l03GmpEpvYSFmk0kqz4cDP/wBdBpra1suJdYccacT7q21GlRehlyH2mTp080nPmypZlwSch5TlelnwAbbhNDaph6sirkxXWPZpKX3sktf2O0lWpfeHzsr8+PEZf2lnVEfWuO064n2ydNRJjt7iQctlJkSkpP5nXmOeLyE9cX2VU+WqMRUTKpCzRX9t0POhSmlpW2tSFp4pUg9pkfUj4AOgaSxmU0ljM/ls4w5j4rmPcitMyC2KkvK9yk+XHj5n5jMRouMzOicFPbw07UDuMjlGPGx3diGnS95TiS+se6i5XfiQ5bKmzJxpVOmSZSk+6p95Thl6buQiJLlQnDcgypEVwyo1sPKQZl6kA3TtFXkvonEtZpyJBf3KUzg4raUJiNVSVqMuNnyo+HSjIxodD6vOOPuKdeccccUdqW4o1KM/Mz4ilAK0FC1AArQULUFAJAWABUKEgAgBYAFQoWABUKFgAVChYAFQoWEAIChIkBUKEgAigoWABUKEiQEgJABACQAQAkAEAJABACQAQAkAEAJABACQAQAkAEAJABACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k=" alt="Project 3" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Leetcode</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  View
+                </button>
+                <button class="btn btn-color-1 project-btn">
+                    Newbie
+                  </button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+</body>
+</html>
